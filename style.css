@@ -94,7 +94,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 5rem 1rem;
-    background-color: var(--Light-gray);
+    background-color: var(--Light-grayish-blue);
 }
 
 .quote-block{
@@ -168,13 +168,17 @@ figcaption{
 }
 
 @media (min-width:90em) {
+
+    body{
+        background-color: var(--Light-grayish-blue);
+    }
     main{
         grid-template-columns: repeat(4,1fr);
         grid-template-areas: 
         'quote-1 quote-1 quote-2 quote-5'
         'quote-3 quote-4 quote-4 quote-5'
         ;
-        max-width: 90rem;
+        max-width: 80rem;
     }
 
     .quote-1{
